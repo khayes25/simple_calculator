@@ -24,9 +24,10 @@ button_8 = Button(root, text="8", padx=40, pady=20, command=button_add).grid(row
 button_9 = Button(root, text="9", padx=40, pady=20, command=button_add).grid(row=1, column=2)
 
 button_0 = Button(root, text="0", padx=40, pady=20, command=button_add).grid(row=4, column=0)
-button_add = Button(root, text="+", padx=39, pady=20, command=button_add).grid(row=4, column=1)
-button_equal = Button(root, text="=", padx=91, pady=20, command=button_add).grid(row=5, column=0)
-button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_add).grid(row=5, column=1)
+button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_add).grid(row=4, column=1, columnspan=2) #Set columnspan to 2 so "Clear" will span 2 buttons
+button_add = Button(root, text="+", padx=39, pady=20, command=button_add).grid(row=5, column=0)
+button_equal = Button(root, text="=", padx=91, pady=20, command=button_add).grid(row=5, column=1, columnspan=2) #Set columnspan to 2 so "=" will span 2 buttons
+
 
 def myClick():
     hello = "Hello " + e.get()
