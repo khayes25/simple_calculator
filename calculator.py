@@ -6,7 +6,7 @@ root.title("Simple Calculator")
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
-#e.insert(0, "Enter Your Name")
+#e.insert(0, "")
 
 button_1 = Button(root, text="1")
 
